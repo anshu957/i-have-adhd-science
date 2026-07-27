@@ -1,14 +1,14 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
-  "name": "i-have-adhd",
-  "description": "Shape Claude Code output for an ADHD reader. Action-first, numbered steps, no tangents.",
+  "name": "i-have-adhd-science",
+  "description": "Action-first ADHD output shaping plus critical research collaboration for Claude Code.",
   "owner": {
     "name": "Ayoub G."
   },
   "plugins": [
     {
-      "name": "i-have-adhd",
-      "description": "Action-first, ADHD-friendly output shaping for Claude Code.",
+      "name": "i-have-adhd-science",
+      "description": "Action-first, ADHD-friendly output plus a research collaborator that argues back, flags confounds, and drops the jargon.",
       "source": "./",
       "category": "productivity"
     }

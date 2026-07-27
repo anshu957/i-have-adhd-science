@@ -22,13 +22,13 @@
 <summary><strong>Claude Code</strong></summary>
 
 ```bash
-claude plugin marketplace add ayghri/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin marketplace add anshu957/i-have-adhd-science
+claude plugin install i-have-adhd-science@i-have-adhd-science
 ```
 
-Then type `/i-have-adhd`. No local clone needed: Claude Code fetches the repo and keeps it updated.
+Then type `/i-have-adhd-science`. No local clone needed: Claude Code fetches the repo and keeps it updated.
 
-Want it on every session? `touch ~/.claude/.i-have-adhd-always` (see [INSTALL.md](./INSTALL.md)).
+Want it on every session? `touch ~/.claude/.i-have-adhd-science-always` (see [INSTALL.md](./INSTALL.md)).
 
 </details>
 
@@ -83,31 +83,37 @@ A skill for your coding assistant that stops it from burying the answer. Action 
 
 ## The rules
 
-10 rules. Full text in [SKILL.md](./skills/i-have-adhd/SKILL.md).
+Seven, plus one that governs them. Full text in [SKILL.md](./skills/i-have-adhd-science/SKILL.md).
 
-1. Lead with the next action.
-2. Number multi-step tasks.
-3. End with one concrete next step.
-4. Suppress tangents.
-5. Restate state every turn.
-6. Specific time estimates (minutes, not "a bit").
-7. Make wins visible.
-8. Matter-of-fact errors.
-9. Cap lists at 5 items.
-10. No preamble. No recap. No closers.
+**0. Shape never overrides substance.** Brevity compresses words, not science.
+
+*Delivery*
+1. Front-load what can be acted on.
+2. Cut what is not load-bearing.
+3. Be concrete.
+
+*Thinking*
+4. Hold your position on evidence, not on pressure.
+5. Show what backs every claim.
+6. Distrust the result before you report it.
+
+*Language*
+7. A word earns its place by adding precision.
+
+Everything under a rule is an example of it, not another rule. This fork trades the upstream's 10 formatting rules for 7 that also cover how the work is judged — the failure mode in research is not a slow start, it is a fast wrong answer nobody argued with.
 
 ## Tune it
 
-Fork, edit `skills/i-have-adhd/SKILL.md`, then swap your copy in:
+Edit `skills/i-have-adhd-science/SKILL.md`. If installed from a local clone, edits are live at the next session — no reinstall. If installed from GitHub:
 
 ```bash
-claude plugin uninstall i-have-adhd            # drop the upstream copy first:
-claude plugin marketplace remove i-have-adhd   # fork and upstream share both names
-claude plugin marketplace add <your-username>/i-have-adhd
-claude plugin install i-have-adhd@i-have-adhd
+claude plugin uninstall i-have-adhd-science
+claude plugin marketplace remove i-have-adhd-science
+claude plugin marketplace add <your-username>/i-have-adhd-science
+claude plugin install i-have-adhd-science@i-have-adhd-science
 ```
 
-Restart Claude Code, then re-invoke `/i-have-adhd`.
+Restart Claude Code, then re-invoke `/i-have-adhd-science`.
 
 ## Credits
 

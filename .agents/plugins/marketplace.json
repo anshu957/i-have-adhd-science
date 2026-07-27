@@ -1,14 +1,14 @@
 {
-  "name": "i-have-adhd",
+  "name": "i-have-adhd-science",
   "interface": {
     "displayName": "I Have ADHD"
   },
   "plugins": [
     {
-      "name": "i-have-adhd",
+      "name": "i-have-adhd-science",
       "source": {
         "source": "url",
-        "url": "https://github.com/ayghri/i-have-adhd.git",
+        "url": "https://github.com/anshu957/i-have-adhd-science.git",
         "ref": "main"
       },
       "policy": {

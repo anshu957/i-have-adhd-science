@@ -1,13 +1,13 @@
 {
-  "name": "i-have-adhd",
+  "name": "i-have-adhd-science",
   "version": "0.1.0",
   "description": "ADHD-friendly output shaping for Codex: action first, numbered steps, no tangents, and visible progress.",
   "author": {
     "name": "Ayoub G.",
-    "url": "https://github.com/ayghri"
+    "url": "https://github.com/anshu957"
   },
-  "homepage": "https://github.com/ayghri/i-have-adhd",
-  "repository": "https://github.com/ayghri/i-have-adhd",
+  "homepage": "https://github.com/anshu957/i-have-adhd-science",
+  "repository": "https://github.com/anshu957/i-have-adhd-science",
   "license": "MIT",
   "keywords": [
     "adhd",
@@ -26,9 +26,9 @@
     "capabilities": [
       "Instructions"
     ],
-    "websiteURL": "https://github.com/ayghri/i-have-adhd",
+    "websiteURL": "https://github.com/anshu957/i-have-adhd-science",
     "defaultPrompt": [
-      "Use i-have-adhd for this task.",
+      "Use i-have-adhd-science for this task.",
       "Make this answer action-first and easy to execute.",
       "Review this response for ADHD-friendly structure."
     ],

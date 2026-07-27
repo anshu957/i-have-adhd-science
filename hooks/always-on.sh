@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
-# SessionStart hook: injects the full i-have-adhd ruleset when the user has
-# opted in by creating $CLAUDE_CONFIG_DIR/.i-have-adhd-always (default ~/.claude).
+# SessionStart hook: injects the full i-have-adhd-science ruleset when the user has
+# opted in by creating $CLAUDE_CONFIG_DIR/.i-have-adhd-science-always (default ~/.claude).
 # Never blocks session start: any failure exits 0.
 #
 # Pure POSIX sh so it runs anywhere Claude Code runs a command hook (sh on
@@ -8,7 +8,7 @@
 # on PATH.
 
 claude_dir="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
-flag_path="$claude_dir/.i-have-adhd-always"
+flag_path="$claude_dir/.i-have-adhd-science-always"
 
 # Only fire when the user has opted in.
 [ -f "$flag_path" ] || exit 0
@@ -16,7 +16,7 @@ flag_path="$claude_dir/.i-have-adhd-always"
 # $0 is the absolute script path substituted into hooks.json by Claude Code,
 # so resolve SKILL.md relative to it instead of trusting an exported env var.
 script_dir=$(dirname -- "$0")
-skill_path="$script_dir/../skills/i-have-adhd/SKILL.md"
+skill_path="$script_dir/../skills/i-have-adhd-science/SKILL.md"
 [ -f "$skill_path" ] || exit 0
 
 # Strip a leading YAML frontmatter block (--- ... --- at the very top of file).

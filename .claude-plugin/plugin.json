@@ -1,9 +1,10 @@
 {
-  "name": "i-have-adhd",
-  "version": "0.1.0",
-  "description": "Shape Claude Code output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, make wins visible.",
+  "name": "i-have-adhd-science",
+  "version": "1.0.0",
+  "description": "Seven rules for a research collaborator writing to an ADHD reader: act-first delivery, positions held on evidence, claims that show their backing, results distrusted before reporting, and no jargon.",
   "author": {
     "name": "Ayoub G.",
     "url": "https://github.com/ayghri"
-  }
+  },
+  "homepage": "https://github.com/anshu957/i-have-adhd-science"
 }

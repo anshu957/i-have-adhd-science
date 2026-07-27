@@ -1,5 +1,5 @@
 {
-  "name": "i-have-adhd",
+  "name": "i-have-adhd-science",
   "version": "0.1.0",
   "description": "Shape Gemini CLI output for an ADHD reader: lead with the next action, number steps, suppress tangents, restate state, make wins visible.",
   "contextFileName": "GEMINI.md"
